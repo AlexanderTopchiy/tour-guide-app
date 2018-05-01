@@ -10,13 +10,14 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+
 /**
- * A {@link Fragment} subclass that displays a list of cultural places.
+ * A {@link Fragment} subclass that displays a list of parks.
  */
-public class CultureFragment extends Fragment {
+public class ParksFragment extends Fragment {
 
 
-    public CultureFragment() {
+    public ParksFragment() {
         // Required empty public constructor
     }
 
@@ -28,17 +29,15 @@ public class CultureFragment extends Fragment {
         ArrayList<Place> places = new ArrayList<Place>();
 
         // Add to an array new objects with the data
-        places.add(new Place("Musical theater", R.drawable.musical_theater));
-        places.add(new Place("Organ Hall", R.drawable.organ_hall));
-        places.add(new Place("Philharmonic Hall", R.drawable.philharmonic_hall));
-        places.add(new Place("Central Concert Hall", R.drawable.central_concert_hall));
-        places.add(new Place("Puppet theater", R.drawable.puppet_theater));
-        places.add(new Place("Central Exhibition Hall", R.drawable.central_exhibition_hall));
-        places.add(new Place("Regional Art Museum", R.drawable.regional_art_museum));
-        places.add(new Place("State Historical and Archaeological Museum-Reserve",
-                             R.drawable.state_historical_and_archaeological_museum_reserve));
-        places.add(new Place("Pushkin Regional Universal Scientific Library",
-                              R.drawable.pushkin_regional_universal_scientific_library));
+        places.add(new Place("Gorky Park", R.drawable.gorky_park));
+        places.add(new Place("Chistiakovskaya Grove", R.drawable.chistiakovskaya_grove));
+        places.add(new Place("Catherine Square", R.drawable.catherine_square));
+        places.add(new Place("Square of Friendship of Peoples",
+                             R.drawable.square_of_friendship_of_peoples));
+        places.add(new Place("Sunny island", R.drawable.sunny_island));
+        places.add(new Place("Park Krasnodar", R.drawable.park_krasnodar));
+        places.add(new Place("Botanical Garden", R.drawable.botanical_garden));
+        places.add(new Place("Seafront", R.drawable.seafront));
 
         // Inflate current View object in places_list.xml
         View rootView = inflater.inflate(R.layout.places_list, container, false);
