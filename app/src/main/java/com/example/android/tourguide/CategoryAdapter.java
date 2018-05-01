@@ -12,8 +12,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     private Context mContext;
 
-    public CategoryAdapter(FragmentManager fm) {
+    public CategoryAdapter(Context context, FragmentManager fm) {
         super(fm);
+        mContext = context;
     }
 
 
@@ -22,6 +23,29 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 return new CultureFragment();
+            case 1:
+                return new ParksFragment();
+            case 2:
+                return new MonumentsFragment();
+            case 3:
+                return new ShoppingFragment();
+            default:
+                return null;
+        }
+    }
+
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position) {
+            case 0:
+                return mContext.getString(R.string.category_culture);
+            case 1:
+                return mContext.getString(R.string.category_parks);
+            case 2:
+                return mContext.getString(R.string.category_monuments);
+            case 3:
+                return mContext.getString(R.string.category_shopping);
             default:
                 return null;
         }
@@ -30,6 +54,6 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 1;
+        return 4;
     }
 }
