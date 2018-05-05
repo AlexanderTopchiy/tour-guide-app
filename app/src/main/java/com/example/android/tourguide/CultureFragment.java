@@ -28,16 +28,16 @@ public class CultureFragment extends Fragment {
         ArrayList<Place> places = new ArrayList<Place>();
 
         // Add to an array new objects with the data
-        places.add(new Place("Musical theater", R.drawable.musical_theater));
-        places.add(new Place("Organ Hall", R.drawable.organ_hall));
-        places.add(new Place("Philharmonic Hall", R.drawable.philharmonic_hall));
-        places.add(new Place("Central Concert Hall", R.drawable.central_concert_hall));
-        places.add(new Place("Puppet theater", R.drawable.puppet_theater));
-        places.add(new Place("Central Exhibition Hall", R.drawable.central_exhibition_hall));
-        places.add(new Place("Regional Art Museum", R.drawable.regional_art_museum));
-        places.add(new Place("State Historical and Archaeological Museum-Reserve",
+        places.add(new Place(getString(R.string.musical_theater), R.drawable.musical_theater));
+        places.add(new Place(getString(R.string.organ_hall), R.drawable.organ_hall));
+        places.add(new Place(getString(R.string.philharmonic_hall), R.drawable.philharmonic_hall));
+        places.add(new Place(getString(R.string.central_concert_hall), R.drawable.central_concert_hall));
+        places.add(new Place(getString(R.string.puppet_theater), R.drawable.puppet_theater));
+        places.add(new Place(getString(R.string.central_exhibition_hall), R.drawable.central_exhibition_hall));
+        places.add(new Place(getString(R.string.regional_art_museum), R.drawable.regional_art_museum));
+        places.add(new Place(getString(R.string.state_historical_and_archaeological_museum_reserve),
                              R.drawable.state_historical_and_archaeological_museum_reserve));
-        places.add(new Place("Pushkin Regional Universal Scientific Library",
+        places.add(new Place(getString(R.string.pushkin_regional_universal_scientific_library),
                               R.drawable.pushkin_regional_universal_scientific_library));
 
         // Inflate current View object in places_list.xml

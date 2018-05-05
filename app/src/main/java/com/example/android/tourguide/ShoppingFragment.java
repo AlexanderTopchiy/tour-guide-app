@@ -29,15 +29,15 @@ public class ShoppingFragment extends Fragment {
         ArrayList<Place> places = new ArrayList<Place>();
 
         // Add to an array new objects with the data
-        places.add(new Place("OZ MALL", R.drawable.oz_mall));
-        places.add(new Place("SBS Megamall", R.drawable.sbs_megamall));
-        places.add(new Place("Gallery Krasnodar", R.drawable.gallery_krasnodar));
-        places.add(new Place("Krasnaya Ploshchad", R.drawable.krasnaya_ploshchad));
-        places.add(new Place("Mega", R.drawable.mega));
-        places.add(new Place("Galaktika", R.drawable.galaktika));
-        places.add(new Place("Karnaval", R.drawable.karnaval));
-        places.add(new Place("Crystal", R.drawable.crystal));
-        places.add(new Place("CITY CENTER", R.drawable.city_center));
+        places.add(new Place(getString(R.string.oz_mall), R.drawable.oz_mall));
+        places.add(new Place(getString(R.string.sbs_megamall), R.drawable.sbs_megamall));
+        places.add(new Place(getString(R.string.gallery_krasnodar), R.drawable.gallery_krasnodar));
+        places.add(new Place(getString(R.string.krasnaya_ploshchad), R.drawable.krasnaya_ploshchad));
+        places.add(new Place(getString(R.string.mega), R.drawable.mega));
+        places.add(new Place(getString(R.string.galaktika), R.drawable.galaktika));
+        places.add(new Place(getString(R.string.karnaval), R.drawable.karnaval));
+        places.add(new Place(getString(R.string.crystal), R.drawable.crystal));
+        places.add(new Place(getString(R.string.city_center), R.drawable.city_center));
 
         // Inflate current View object in places_list.xml
         View rootView = inflater.inflate(R.layout.places_list, container, false);
